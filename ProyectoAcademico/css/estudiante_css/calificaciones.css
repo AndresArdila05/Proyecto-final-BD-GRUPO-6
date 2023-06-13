@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .datos-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .datos-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .datos-list li {
+    margin-bottom: 10px;
+  }
+  
+  .datos-list li strong {
+    font-weight: bold;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .welcome-message {
+    font-size: 18px;
+  }
+  
+  .btn-volver {
+    padding: 10px 20px;
+    background-color: #0930b0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }

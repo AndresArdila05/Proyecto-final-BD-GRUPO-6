@@ -1,0 +1,146 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos del menú de navegación */
+  nav {
+    background-color: #f2f2f2;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    position: relative;
+  }
+  
+  nav a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Estilos de los submenús */
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+    width: 100%; /* Ajuste de anchura */
+    padding: 0; /* Eliminar el relleno para ajustar al tamaño del menú principal */
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Cambiar a 'block' en lugar de 'inherit' */
+  }
+  
+  nav ul ul li {
+    width: 100%;
+    display: list-item;
+    position: relative;
+  }
+  
+  nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    header, nav, main {
+      padding: 10px;
+    }
+    
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav li {
+      flex: none;
+    }
+  }
+
+  .user-corner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-button {
+    margin-left: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .logout-button:hover {
+    background-color: #cc0000;
+  }
+
+  .background-image {
+    position: relative;
+    background-image: url('../../assets/img/fondo_cyt.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .overlay-text {
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .overlay-text2 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
